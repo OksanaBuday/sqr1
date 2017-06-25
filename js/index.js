@@ -1,20 +1,33 @@
-
-
-var a = Number(prompt('Введіть a '));
+var a = Number(prompt('Введіть а'));
 var b = Number(prompt('Введіть b'));
 var c = Number(prompt('Введіть c'));
 
-function quartion (a,b,c){
-    var rusult;
+var result = square(a, b, c);
+document.write(result);
 
-    if (a === 0){
+function square(a, b, c) {
+    var result;
+
+    if (a === 0) {
         result = 'Введіть а відмінне від 0';
         return result;
     }
+    if (d === 0) {
+        var x = -(b/2 * a);
+        return 'x = ' + x;
+    }
+    
+    if(d < 0){
+        result = 'Рівняння немає коренів';
+        return result;
+    }
+    
+    var d = D(a, b, c);
+    var x1 = (-b + Math.sqrt(d))/ 2*a;
+    var x2 = (-b - Math.sqrt(d))/ 2* a;
+    return 'x1= ' + x1 + ' x2 = ' + x2;
 }
-function D (a, b, c){
-   return b*b - 4*a*c;
+
+function D(a, b, c) {
+    return b * b - 4 * a * c;
 }
- var X = (a,b,c){
-     
- }
