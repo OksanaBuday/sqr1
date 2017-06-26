@@ -34,8 +34,8 @@ function square(a, b, c) {
     }
 
     var d = D(a, b, c);
-    var x1 = (-b + Math.sqrt(d)) / 2 * a;
-    var x2 = (-b - Math.sqrt(d)) / 2 * a;
+    var x1 = (-b + Math.sqrt(d)) / (2 * a);
+    var x2 = (-b - Math.sqrt(d)) / (2 * a);
     return 'x1= ' + x1 + ' x2 = ' + x2;
 
 }
